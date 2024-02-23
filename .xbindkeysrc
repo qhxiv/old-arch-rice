@@ -1,0 +1,23 @@
+# Increase volume
+"amixer set Master 5%+; pkill startStatusbar; startStatusbar"
+XF86AudioRaiseVolume
+
+# Decrease volume
+"amixer set Master 5%-; pkill startStatusbar; startStatusbar"
+XF86AudioLowerVolume
+
+# Mute volume
+"amixer set Master toggle; pkill startStatusbar; startStatusbar"
+XF86AudioMute
+
+# Increase brightness
+"brightnessctl s +10%"
+XF86MonBrightnessUp
+
+# Decrease brightness
+"brightnessctl s 10%-"
+XF86MonBrightnessDown
+
+# Take screenshot
+"flameshot full --clipboard --path ~/Pictures/screenshots"
+Print

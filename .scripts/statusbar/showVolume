@@ -1,0 +1,10 @@
+#!/bin/bash
+
+volume=$(amixer get Master | grep % | awk '{print $4}' | sed 's/[^0-9%]//g')
+status=$(amixer get Master | grep % | awk '{print $6}' | sed 's/[][]//g')
+
+if [ $status = "off" ]; then
+	volume=muted
+fi
+
+echo "[VOL $volume]"

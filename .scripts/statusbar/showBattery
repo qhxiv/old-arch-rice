@@ -1,0 +1,12 @@
+#!/bin/bash
+
+capacity=$(cat /sys/class/power_supply/BAT0/capacity)
+status=$(cat /sys/class/power_supply/BAT0/status)
+
+if [[ $status = "Discharging" ]]; then
+	status=-
+else
+	status=+
+fi
+
+echo "[BAT $capacity%$status]"
