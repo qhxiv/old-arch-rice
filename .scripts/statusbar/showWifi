@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wifiName=$(nmcli | grep "wlp2s0: co" | awk '{print$4}')
+wifiName=$(nmcli | head -n 1 | cut -d' ' -f4-)
 
 if [[ $(nmcli general | awk '{print$1}' | tail -n 1) = disconnected ]]; then
 	wifiName=disconnected

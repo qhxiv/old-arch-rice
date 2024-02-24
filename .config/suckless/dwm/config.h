@@ -9,11 +9,11 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int splitstatus        = 1;        /* 1 for split status items */
 static const char *splitdelim       = ";";      /* Character used for separating status*/
 static const char *fonts[]          = {
-	 "monospace:size=10.5",
+	 "monospace:size=9.5",
 };
-static const char dmenufont[] = "monospace:size=10.5";
-static const char col_dark[]   = "#1f1f28";
-static const char col_medium[] = "#2d4f67";
+static const char dmenufont[] = "monospace:size=9.5";
+static const char col_dark[]   = "#191724";
+static const char col_medium[] = "#26233a";
 static const char col_light[]  = "#f5efd0";
 static const unsigned int baralpha = 0xb0;
 static const unsigned int borderalpha = OPAQUE;
