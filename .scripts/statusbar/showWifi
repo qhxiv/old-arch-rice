@@ -6,4 +6,4 @@ if [[ $(nmcli general | awk '{print$1}' | tail -n 1) = disconnected ]]; then
 	wifiName=disconnected
 fi
 
-echo "[WIFI $wifiName]"
+echo "WIFI $wifiName"

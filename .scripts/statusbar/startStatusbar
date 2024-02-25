@@ -1,10 +1,12 @@
 #!/bin/bash
 
 showDateAndTime() {
-	date +'%H:%M, %a %d %b %Y'
+	date +'%H:%M, %a %b %d'
 }
 
+delim='    '
+
 while :; do
-	xsetroot -name "$(showDateAndTime);$(showWifi) $(showVolume) $(showBattery)"
+	xsetroot -name "$(showDateAndTime);$(showWifi)$delim$(showVolume)$delim$(showBattery)"
 	sleep	1
 done

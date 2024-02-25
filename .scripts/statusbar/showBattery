@@ -9,4 +9,4 @@ else
 	status=+
 fi
 
-echo "[BAT $capacity%$status]"
+echo "BAT $capacity%$status"

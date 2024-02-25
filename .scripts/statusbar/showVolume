@@ -7,4 +7,4 @@ if [ $status = "off" ]; then
 	volume=muted
 fi
 
-echo "[VOL $volume]"
+echo "VOL $volume"
