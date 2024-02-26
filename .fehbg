@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/qhxiv/Pictures/wallpapers/landscape1.png' 
