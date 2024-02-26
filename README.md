@@ -1,5 +1,5 @@
 # My Arch Linux setup with dwm
-- Statusbar: [my own script](./scripts/statusbar) + splitstatus patch dwm
+- Statusbar: [my own script](https://github.com/qhxiv/dotfiles/tree/main/.scripts/statusbar) + splitstatus patch dwm
 - Compositor: [picom](https://wiki.archlinux.org/title/picom)
 - Image viewer: [feh](https://wiki.archlinux.org/title/Feh)
 ## Final look
