@@ -10,4 +10,3 @@ for d in ~/.scripts/*/; do
 done
 
 startx
-. "$HOME/.cargo/env"
