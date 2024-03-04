@@ -8,12 +8,12 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int splitstatus        = 1;        /* 1 for split status items */
 static const char *splitdelim       = ";";      /* Character used for separating status*/
-static const char *fonts[]          = { "Roboto:size=10.25" };
-static const char dmenufont[] = "Roboto:size=10.25";
-static const char col_dark[]   = "#1f1f28";
-static const char col_medium[] = "#2d4f67";
-static const char col_light[]  = "#dcd7ba";
-static const unsigned int baralpha = 0xd0;
+static const char *fonts[]          = { "Noto Sans:size=10" };
+static const char dmenufont[] = "Noto Sans:size=10";
+static const char col_dark[]   = "#191724";
+static const char col_medium[] = "#403d52";
+static const char col_light[]  = "#f5efd0";
+static const unsigned int baralpha = 0xc0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
