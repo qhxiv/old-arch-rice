@@ -9,15 +9,15 @@ static const int splitstatus        = 1;        /* 1 for split status items */
 static const char *splitdelim       = ";";      /* Character used for separating status*/
 static const char *fonts[]          = { "Noto Sans:size=10" };
 static const char dmenufont[] = "Noto Sans:size=10";
-static const char col_dark[]   = "#191724";
-static const char col_medium[] = "#403d52";
-static const char col_light[]  = "#f5efd0";
+static const char col_dark[]   = "#282828";
+static const char col_medium[] = "#bdae93";
+static const char col_light[]  = "#ebdbb2";
 static const unsigned int baralpha = 0xc0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
+	/*               fg          bg          border   */
 	[SchemeNorm]  = { col_light, col_dark,   col_dark },
-	[SchemeSel]   = { col_light, col_medium, col_light },
+	[SchemeSel]   = { col_dark,  col_medium,  col_light },
 };
 static const unsigned int alphas[][3] = {
 	/*               fg         bg         border   */
@@ -64,7 +64,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_dark, "-nf", col_light, "-sb", col_medium, "-sf", col_light, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_dark, "-nf", col_light, "-sb", col_medium, "-sf", col_dark, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 
 static const Key keys[] = {

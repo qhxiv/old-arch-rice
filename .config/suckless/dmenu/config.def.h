@@ -10,11 +10,14 @@ static const char *fonts[] = {
 	"Noto Sans:size=10"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
+static const char col_dark[]   = "#282828";
+static const char col_light[]  = "#bdae93";
+static const char col_medium[] = "#d5c4a1";
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#f5efd0", "#191724" },
-	[SchemeSel]  = { "#f5efd0", "#403d52" },
-	[SchemeOut]  = { "#f5efd0", "#403d52" },
+	[SchemeNorm] = { col_light, col_dark },
+	[SchemeSel]  = { col_dark,  col_medium },
+	[SchemeOut]  = { col_dark,  col_medium },
 };
 
 static const unsigned int alphas[SchemeLast][2] = {

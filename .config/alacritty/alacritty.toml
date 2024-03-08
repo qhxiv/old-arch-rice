@@ -1,4 +1,4 @@
-import = [ "~/.config/alacritty/themes/themes/kanagawa_wave.toml" ]
+import = [ "~/.config/alacritty/themes/themes/gruvbox_material.toml" ]
 
 [font]
 size = 9
