@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -9,10 +9,10 @@ static const int splitstatus        = 1;        /* 1 for split status items */
 static const char *splitdelim       = ";";      /* Character used for separating status*/
 static const char *fonts[]          = { "Noto Sans:size=10" };
 static const char dmenufont[] = "Noto Sans:size=10";
-static const char col_dark[]   = "#282828";
-static const char col_medium[] = "#bdae93";
-static const char col_light[]  = "#ebdbb2";
-static const unsigned int baralpha = 0xc0;
+static const char col_dark[]   = "#1f1f1f";
+static const char col_medium[] = "#8a8a8a";
+static const char col_light[]  = "#e3e3e3";
+static const unsigned int baralpha = 0xcc;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg          bg          border   */
