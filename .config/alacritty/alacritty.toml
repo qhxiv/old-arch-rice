@@ -1,4 +1,4 @@
-# import = [ "~/.config/alacritty/themes/themes/konsole_linux.toml" ]
+import = [ "~/.config/alacritty/themes/themes/konsole_linux.toml" ]
 
 [font]
 size = 9
