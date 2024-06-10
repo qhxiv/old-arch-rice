@@ -1,4 +1,4 @@
 #!/bin/bash
 
 wallpaper=$(ls ~/Pictures/wallpapers | dmenu -i)
-[ $wallpaper -z ] || feh --bg-fill /home/qhxiv/Pictures/wallpapers/$wallpaper
+[ $wallpaper -z ] || feh --bg-fill ~/Pictures/wallpapers/$wallpaper
