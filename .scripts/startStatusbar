@@ -1,0 +1,52 @@
+#!/bin/bash
+
+showDateAndTime() {
+	date +'%R, %a %d %b'
+}
+
+showWifi() {
+	wifiName=$(nmcli | head -n 1 | cut -d' ' -f4-)
+
+	if [[ $(nmcli general | awk '{print$1}' | tail -n 1) = disconnected ]]; then
+		wifiName=disconnected
+	fi
+
+	echo "wifi $wifiName"
+}
+
+showVolume() {
+	volume=$(amixer get Master | grep % | awk '{print $4}' | sed 's/[^0-9%]//g')
+	status=$(amixer get Master | grep % | awk '{print $6}' | sed 's/[][]//g')
+
+	if [ $status = "off" ]; then
+		volume=muted
+	fi
+
+	echo "vol $volume"
+}
+
+showMem() {
+	used=$(free -h | grep Mem | awk '{print $3}')
+
+	echo "mem $used"
+}
+
+showBattery() {
+	capacity=$(cat /sys/class/power_supply/BAT0/capacity)
+	status=$(cat /sys/class/power_supply/BAT0/status)
+
+	if [[ $status = "Discharging" ]]; then
+		status=-
+	else
+		status=+
+	fi
+
+	echo "bat $capacity%$status"
+}
+
+delim='    '
+
+while :; do
+	xsetroot -name "$(showDateAndTime);$(showWifi)$delim$(showVolume)$delim$(showMem)$delim$(showBattery)"
+	sleep	1
+done
