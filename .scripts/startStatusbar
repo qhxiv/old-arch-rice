@@ -10,7 +10,6 @@ showWifi() {
 	if [[ $(nmcli general | awk '{print$1}' | tail -n 1) = disconnected ]]; then
 		wifiName=disconnected
 	fi
-
 	echo "wifi $wifiName"
 }
 
@@ -21,7 +20,6 @@ showVolume() {
 	if [ $status = "off" ]; then
 		volume=muted
 	fi
-
 	echo "vol $volume"
 }
 
@@ -40,7 +38,6 @@ showBattery() {
 	else
 		status=+
 	fi
-
 	echo "bat $capacity%$status"
 }
 
