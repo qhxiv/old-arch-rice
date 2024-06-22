@@ -19,5 +19,5 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
 
 # Take screenshot
-"flameshot full --clipboard --path ~/Pictures/screenshots"
+"flameshot gui"
 Print
