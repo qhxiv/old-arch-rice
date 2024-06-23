@@ -10,9 +10,9 @@ static const int splitstatus        = 1;        /* 1 for split status items */
 static const char *splitdelim       = ";";      /* Character used for separating status*/
 static const char *fonts[]          = { "Noto Sans:size=10" };
 static const char dmenufont[] = "Noto Sans:size=10";
-static const char col_dark[]   = "#0c0c0c";
-static const char col_medium[] = "#767676";
-static const char col_light[]  = "#f2f2f2";
+static const char col_dark[]   = "#000000";
+static const char col_medium[] = "#7f7f7f";
+static const char col_light[]  = "#ffffff";
 
 static const char *colors[][3]      = {
 	/*               fg          bg          border   */

@@ -10,9 +10,9 @@ static const char *prompt = NULL;      /* -p  option; prompt to the left of inpu
   
 static const char *colors[SchemeLast][2] = {
 	/*               fg         bg         */
-	[SchemeNorm] = { "#f2f2f2", "#0c0c0c" },
-	[SchemeSel]  = { "#0c0c0c", "#f2f2f2" },
-	[SchemeOut]  = { "#0c0c0c", "#767676" },
+	[SchemeNorm] = { "#ffffff", "#000000" },
+	[SchemeSel]  = { "#000000", "#ffffff" },
+	[SchemeOut]  = { "#000000", "#7f7f7f" },
 };
 /* -l and -g options; controls number of lines and columns in grid if > 0 */
 static unsigned int lines      = 15;

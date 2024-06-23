@@ -1,7 +1,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias lsd='lsd -A --group-dirs last'
+alias la='ls -A --color=auto --group-directories-first'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias glog='git log --graph --oneline --decorate'
