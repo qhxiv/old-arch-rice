@@ -9,7 +9,7 @@ alias glog='git log --graph --oneline --decorate'
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias ws='cd /mnt/data/Documents/Workspace'
 
-alias sn='shutdown now'
+alias sd='shutdown now'
 alias re='reboot'
 
 PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null)';
