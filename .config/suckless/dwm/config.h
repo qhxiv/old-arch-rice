@@ -79,8 +79,6 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          SHCMD("cmus-remote --pause") },
 	{ MODKEY,                       XK_b,      spawn,          SHCMD("cmus-remote --next") },
 	{ MODKEY,                       XK_z,      spawn,          SHCMD("cmus-remote --prev") },
-	{ MODKEY,                       XK_r,      spawn,          SHCMD("cmus-remote --repeat") },
-	{ MODKEY,                       XK_s,      spawn,          SHCMD("cmus-remote --shuffle") },
 	{ MODKEY,                       XK_minus,  spawn,          SHCMD("cmus-remote --volume -10%") },
 	{ MODKEY,                       XK_equal,  spawn,          SHCMD("cmus-remote --volume +10%") },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
