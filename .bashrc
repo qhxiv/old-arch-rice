@@ -5,12 +5,15 @@ shopt -s autocd #Allow you to cd into directory merely by typing the directory n
 
 alias ls='ls -hNA --color=auto --group-directories-first'
 alias grep='grep --color=auto'
-alias glog='git log --graph --oneline --decorate'
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias ws='cd /mnt/data/Documents/Workspace'
 
+alias glog='git log --graph --oneline --decorate'
+
 alias sd='shutdown now'
 alias re='reboot'
+
+alias weather='curl wttr.in'
 
 PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null)';
 PS1='\[\e[1m\]\w\[\e[0m\] \[\e[1m\]${PS1_CMD1}\[\e[0m\]> '
